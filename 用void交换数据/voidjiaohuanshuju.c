@@ -12,13 +12,13 @@ int main()
 	return 0;
 }
 
-void swap(void* p1, void* p2, int len)//len是步长（此函数更具有通用性）
+void swap(void* p1, void* p2, int len)//len鏄闀匡紙姝ゅ嚱鏁版洿鍏锋湁閫氱敤鎬э級
 {
-	//把void类型的指针转换为char类型
+	//鎶妚oid绫诲瀷鐨勬寚閽堣浆鎹负char绫诲瀷
 	char* pc1 = p1;
 	char* pc2 = p2;
 	char temp = 0;
-	//利用循环一个字节一个字节的转换
+	//鍒╃敤寰幆涓�涓瓧鑺備竴涓瓧鑺傜殑杞崲
 	for (int i = 0; i < len; i++)
 	{
 		temp = *pc1;
